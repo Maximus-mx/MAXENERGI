@@ -2,7 +2,7 @@ import telebot
 from random import randint
 from datetime import datetime
 from telebot import types
-import zequests
+import requests
 import os
 import gdown
 from flask import Flask, zequests
