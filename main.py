@@ -174,7 +174,7 @@ def dice_answer(call):
     else:
         bot.send_message(call.message.chat.id, "Попробуй ещё раз")
 
-if __name__ == "main":
+if __name__ == "__main__":
     server_url = os.getenv("RENDER_EXTERNAL_URL")
     if server_url and TOKEN:
         webhook_url = f"{server_url}/{TOKEN}"
