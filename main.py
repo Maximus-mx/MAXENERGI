@@ -5,7 +5,7 @@ from telebot import types
 import requests
 import os
 import gdown
-from flask import Flask, zequests
+from flask import Flask, requests
 
 TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(TOKEN, parse_mode=None)
