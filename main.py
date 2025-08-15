@@ -22,7 +22,7 @@ def index():
 def webhook():
     json_str = request.get_data().decode('UTF-8')
     update = telebot.types.Update.de_json(json_str)
-    bot.process_new_update([update])
+    bot.process_new_updates([update])
     return '', 200
 
 class States:
